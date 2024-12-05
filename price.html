@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link type="image/x-icon" href="img/favicon.ico" rel="shortcut icon">
+	<link type="Image/x-icon" href="img/favicon.ico" rel="icon">
+	<title>Прайс</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__container container">
+			<div class="header__wrapper wrapper">
+				<div class="header__logo">
+					<a href="/index.html">
+						<img src="img/logo.png" alt="logotype">
+					</a>
+				</div>
+				<nav class="header__menu menu">
+					<ul class="header__list menu__list">
+						<li class="header__item menu__item"><a href="/services.html">Услуги</a></li>
+						<li class="header__item menu__item"><a href="/price.html">Прайс</a></li>
+						<li class="header__item menu__item"><a href="/education.html">Обучение</a></li>
+						<li class="header__item menu__item"><a href="/gallery.html">До и после</a></li>
+						<li class="header__item menu__item"><a href="/about.html">Обо мне</a></li>
+						<li class="header__item menu__item"><a href="/contacts.html">Контакты</a></li>
+					</ul>
+					<div class="burger">
+						<span></span>
+					</div>
+				</nav>
+				<button class="header__btn btn">Записаться</button>
+			</div>
+		</div>
+		<div class="popup">
+			<form action="telegram.php" method="POST" class="popup__form">
+				<img src="img/icons/close_icon.svg" alt="close" class="popup__close">
+				<div class="popup__group">
+					<label class="popup__text">Ваше Имя</label>
+					<input type="text" name="user_name" required>
+				</div>
+				<div class="popup__group">
+					<label class="popup__phone">Ваш Телефон</label>
+					<input type="tel" name="user_phone" required>
+				</div>
+				<div class="popup__group">
+					<label class="popup__message">Ваше сообщение</label>
+					<textarea name="user_message"></textarea>
+				</div>
+				<div class="popup__group">
+					<p class="popup__check">Согласен с обработкой <a href="#">персональных данных</a></p>
+					<input required type="checkbox" name="user_confirmation" class="popup__checkbox">
+				</div>
+				<button class="popup__btn" name="user_submit">Отправить</button>
+			</form>
+		</div>
+	</header>
+	<main class="main price-page">
+		<section>
+			<h1 class="price-page__title title">Прайс-лист</h1>
+			<div class="price-page__wrapper wrapper">
+				<div class="tables">
+					<div class="tables__item">
+						<h2 class="price-page__subtitle">
+							Инъекционная косметология — биоревитализация, контурная пластика, ботокс
+						</h2>
+						<table>
+							<thead>
+								<tr>
+									<th>Услуга</th>
+									<th>Описание</th>
+									<th>Цена</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Биоревитализация лица</td>
+									<td>Восстанавливает уровень увлажнения кожи, повышает упругость и эластичность, улучшает цвет
+										лица</td>
+									<td>10 000 ₽</td>
+								</tr>
+								<tr>
+									<td>Мезотерапия лица</td>
+									<td>Улучшает кровообращение, стимулирует обновление кожи, уменьшает пигментацию</td>
+									<td>8 500 ₽</td>
+								</tr>
+								<tr>
+									<td>Контурная пластика губ</td>
+									<td>Увеличение объема и коррекция формы губ с использованием безопасных филлеров</td>
+									<td>12 000 ₽</td>
+								</tr>
+								<tr>
+									<td>Инъекции ботокса (лоб)</td>
+									<td>Коррекция мимических морщин в области лба, устранение морщин "удивления"</td>
+									<td>7 000 ₽</td>
+								</tr>
+								<tr>
+									<td>Инъекции ботокса (межбровье)</td>
+									<td>Снятие напряжения и разглаживание морщин между бровями</td>
+									<td>6 500 ₽</td>
+								</tr>
+								<tr>
+									<td>Инъекции филлеров (скулы)</td>
+									<td>Моделирование скул для улучшения овала лица и придания выразительности</td>
+									<td>14 000 ₽</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="tables__item">
+						<h2 class="price-page__subtitle">Пилинги и лечение акне — процедуры для сияющей и здоровой кожи</h2>
+						<table>
+							<thead>
+								<tr>
+									<th>Услуга</th>
+									<th>Описание</th>
+									<th>Цена</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Поверхностный пилинг</td>
+									<td>Обновление верхних слоев кожи, борьба с тусклым цветом лица и мелкими морщинами</td>
+									<td>3 500 ₽</td>
+								</tr>
+								<tr>
+									<td>Срединный пилинг</td>
+									<td>Глубокое очищение кожи, улучшение текстуры, снижение проявлений акне и пигментации</td>
+									<td>6 500 ₽</td>
+								</tr>
+								<tr>
+									<td>Глубокий химический пилинг</td>
+									<td>Удаление поврежденных слоев кожи для значительного улучшения текстуры и цвета</td>
+									<td>10 000 ₽</td>
+								</tr>
+								<tr>
+									<td>Лечение акне (курс из 5 процедур)</td>
+									<td>Комплекс процедур для борьбы с воспалениями и улучшения состояния кожи</td>
+									<td>20 000 ₽</td>
+								</tr>
+								<tr>
+									<td>Пилинг Джесснера</td>
+									<td>Сильный пилинг для устранения следов постакне и выраженной пигментации</td>
+									<td>7 500 ₽</td>
+								</tr>
+								<tr>
+									<td>Карбонотерапия (карбоновый пилинг)</td>
+									<td>Удаление загрязнений и омоложение кожи с помощью карбоновой маски и лазера</td>
+									<td>8 000 ₽</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="tables__item">
+						<h2 class="price-page__subtitle">Коррекция бровей и ресниц — создание выразительного образа</h2>
+						<table>
+							<thead>
+								<tr>
+									<th>Услуга</th>
+									<th>Описание</th>
+									<th>Цена</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Коррекция и окрашивание бровей</td>
+									<td>Моделирование формы бровей и окрашивание стойкими пигментами</td>
+									<td>2 000 ₽</td>
+								</tr>
+								<tr>
+									<td>Ламинирование ресниц</td>
+									<td>Создание эффекта изогнутых и объемных ресниц на длительное время</td>
+									<td>3 000 ₽</td>
+								</tr>
+								<tr>
+									<td>Биофиксация бровей</td>
+									<td>Формирование бровей и фиксация их положения, создание ухоженного вида</td>
+									<td>2 500 ₽</td>
+								</tr>
+								<tr>
+									<td>Окрашивание ресниц</td>
+									<td>Придание ресницам выразительного цвета для естественного макияжа</td>
+									<td>1 500 ₽</td>
+								</tr>
+								<tr>
+									<td>Ламинирование бровей</td>
+									<td>Укладка и фиксация бровей, придание формы и объемного вида</td>
+									<td>2 500 ₽</td>
+								</tr>
+								<tr>
+									<td>Пудровое напыление бровей</td>
+									<td>Легкий перманентный макияж для создания эффекта аккуратных и насыщенных бровей</td>
+									<td>8 000 ₽</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="tables__item">
+						<h2 class="price-page__subtitle">Аппаратная косметология — уход для омоложения и лифтинга</h2>
+						<table>
+							<thead>
+								<tr>
+									<th>Услуга</th>
+									<th>Описание</th>
+									<th>Цена</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>RF-лифтинг лица</td>
+									<td>Радиочастотное омоложение, улучшение упругости кожи, разглаживание мелких морщин</td>
+									<td>9 000 ₽</td>
+								</tr>
+								<tr>
+									<td>Ультразвуковая чистка лица</td>
+									<td>Очищение кожи с использованием ультразвука, удаление загрязнений и ороговевших клеток
+									</td>
+									<td>4 500 ₽</td>
+								</tr>
+								<tr>
+									<td>Криотерапия лица</td>
+									<td>Воздействие холодом для стимулирования кровообращения, уменьшение воспалений и тонизация
+									</td>
+									<td>5 000 ₽</td>
+								</tr>
+								<tr>
+									<td>Фракционный лазер</td>
+									<td>Лазерное воздействие для уменьшения морщин, пигментации и восстановления кожи</td>
+									<td>15 000 ₽</td>
+								</tr>
+								<tr>
+									<td>Микродермабразия</td>
+									<td>Механическое удаление верхнего слоя кожи для устранения дефектов и улучшения текстуры
+									</td>
+									<td>6 000 ₽</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="tables__item">
+						<h2 class="price-page__subtitle">Косметологические курсы и обучение — обучение для профессионалов и
+							новичков</h2>
+						<table>
+							<thead>
+								<tr>
+									<th>Услуга</th>
+									<th>Описание</th>
+									<th>Цена</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Базовый курс косметологии</td>
+									<td>Основы ухода за кожей, изучение методов пилинга, работа с популярными инъекциями</td>
+									<td>25 000 ₽</td>
+								</tr>
+								<tr>
+									<td>Курс мезотерапии</td>
+									<td>Обучение техникам инъекционной терапии для омоложения и коррекции кожи</td>
+									<td>30 000 ₽</td>
+								</tr>
+								<tr>
+									<td>Мастер-класс по контурной пластике</td>
+									<td>Практический курс по моделированию контуров лица с использованием филлеров</td>
+									<td>20 000 ₽</td>
+								</tr>
+								<tr>
+									<td>Курс аппаратной косметологии</td>
+									<td>Изучение работы с аппаратами для омоложения, чистки и лифтинга кожи</td>
+									<td>35 000 ₽</td>
+								</tr>
+								<tr>
+									<td>Обучение работе с ботоксом</td>
+									<td>Техники введения ботулотоксина для разглаживания мимических морщин</td>
+									<td>28 000 ₽</td>
+								</tr>
+								<tr>
+									<td>Повышение квалификации для косметологов</td>
+									<td>Специальные курсы для действующих косметологов с изучением новых технологий и методик
+									</td>
+									<td>40 000 ₽</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="card">
+						<div class="card__container">
+							<h2 class="card__subtitle">Инъекционная косметология — биоревитализация, контурная пластика, ботокс
+							</h2>
+							<div class="card__wrapper">
+								<h3 class="card__title">Биоревитализация лица</h3>
+								<p class="card__description">Восстанавливает уровень увлажнения кожи, повышает упругость и
+									эластичность, улучшает цвет лица</p>
+								<p class="card__price">10 000 ₽</p>
+							</div>
+							<div class="card__wrapper">
+								<h3 class="card__title">Мезотерапия лица</h3>
+								<p class="card__description">Улучшает кровообращение, стимулирует обновление кожи, уменьшает
+									пигментацию</p>
+								<p class="card__price">8 500 ₽</p>
+							</div>
+							<div class="card__wrapper">
+								<h3 class="card__title">Контурная пластика губ</h3>
+								<p class="card__description">Увеличение объема и коррекция формы губ с использованием безопасных
+									филлеров</p>
+								<p class="card__price">12 000 ₽</p>
+							</div>
+							<div class="card__wrapper">
+								<h3 class="card__title">Инъекции ботокса (лоб)</h3>
+								<p class="card__description">Коррекция мимических морщин в области лба, устранение морщин
+									"удивления"</p>
+								<p class="card__price">7 000 ₽</p>
+							</div>
+							<div class="card__wrapper">
+								<h3 class="card__title">Инъекции ботокса (межбровье)</h3>
+								<p class="card__description">Снятие напряжения и разглаживание морщин между бровями</p>
+								<p class="card__price">6 500 ₽</p>
+							</div>
+							<div class="card__wrapper">
+								<h3 class="card__title">Инъекции филлеров (скулы)</h3>
+								<p class="card__description">Моделирование скул для улучшения овала лица и придания
+									выразительности</p>
+								<p class="card__price">14 000 ₽</p>
+							</div>
+						</div>
+						<div class="card__container">
+							<h2 class="card__subtitle">Пилинги и лечение акне — процедуры для сияющей и здоровой кожи</h2>
+							<div class="card__wrapper">
+								<h3 class="card__title">Поверхностный пилинг</h3>
+								<p class="card__description">Обновление верхних слоев кожи, борьба с тусклым цветом лица и
+									мелкими морщинами</p>
+								<p class="card__price">3 500 ₽</p>
+							</div>
+							<div class="card__wrapper">
+								<h3 class="card__title">Срединный пилинг</h3>
+								<p class="card__description">Глубокое очищение кожи, улучшение текстуры, снижение проявлений
+									акне и пигментации</p>
+								<p class="card__price">6 500 ₽</p>
+							</div>
+							<div class="card__wrapper">
+								<h3 class="card__title">Глубокий химический пилинг</h3>
+								<p class="card__description">Удаление поврежденных слоев кожи для значительного улучшения
+									текстуры и цвета</p>
+								<p class="card__price">10 000 ₽</p>
+							</div>
+							<div class="card__wrapper">
+								<h3 class="card__title">Лечение акне (курс из 5 процедур)</h3>
+								<p class="card__description">Комплекс процедур для борьбы с воспалениями и улучшения состояния
+									кожи</p>
+								<p class="card__price">20 000 ₽</p>
+							</div>
+							<div class="card__wrapper">
+								<h3 class="card__title">Пилинг Джесснера</h3>
+								<p class="card__description">Сильный пилинг для устранения следов постакне и выраженной
+									пигментации</p>
+								<p class="card__price">7 500 ₽</p>
+							</div>
+							<div class="card__wrapper">
+								<h3 class="card__title">Карбонотерапия (карбоновый пилинг)</h3>
+								<p class="card__description">Удаление загрязнений и омоложение кожи с помощью карбоновой маски и
+									лазера</p>
+								<p class="card__price">8 000 ₽</p>
+							</div>
+						</div>
+						<div class="card__container">
+							<h2 class="card__subtitle">Коррекция бровей и ресниц — создание выразительного образа</h2>
+							<div class="card__wrapper">
+								<h3 class="card__title">Коррекция и окрашивание бровей</h3>
+								<p class="card__description">Моделирование формы бровей и окрашивание стойкими пигментами</p>
+								<p class="card__price">2 000 ₽</p>
+							</div>
+							<div class="card__wrapper">
+								<h3 class="card__title">Ламинирование ресниц</h3>
+								<p class="card__description">Создание эффекта изогнутых и объемных ресниц на длительное время
+								</p>
+								<p class="card__price">3 000 ₽</p>
+							</div>
+							<div class="card__wrapper">
+								<h3 class="card__title">Биофиксация бровей</h3>
+								<p class="card__description">Формирование бровей и фиксация их положения, создание ухоженного
+									вида</p>
+								<p class="card__price">2 500 ₽</p>
+							</div>
+							<div class="card__wrapper">
+								<h3 class="card__title">Окрашивание ресниц</h3>
+								<p class="card__description">Придание ресницам выразительного цвета для естественного макияжа
+								</p>
+								<p class="card__price">1 500 ₽</p>
+							</div>
+							<div class="card__wrapper">
+								<h3 class="card__title">Ламинирование бровей</h3>
+								<p class="card__description">Укладка и фиксация бровей, придание формы и объемного вида</p>
+								<p class="card__price">2 500 ₽</p>
+							</div>
+							<div class="card__wrapper">
+								<h3 class="card__title">Пудровое напыление бровей</h3>
+								<p class="card__description">Легкий перманентный макияж для создания эффекта аккуратных и
+									насыщенных бровей</p>
+								<p class="card__price">8 000 ₽</p>
+							</div>
+						</div>
+						<div class="card__container">
+							<h2 class="card__subtitle">Аппаратная косметология — уход для омоложения и лифтинга</h2>
+							<div class="card__wrapper">
+								<h3 class="card__title">RF-лифтинг лица</h3>
+								<p class="card__description">Радиочастотное омоложение, улучшение упругости кожи, разглаживание
+									мелких морщин</p>
+								<p class="card__price">9 000 ₽</p>
+							</div>
+							<div class="card__wrapper">
+								<h3 class="card__title">Ультразвуковая чистка лица</h3>
+								<p class="card__description">Очищение кожи с использованием ультразвука, удаление загрязнений и
+									ороговевших клеток</p>
+								<p class="card__price">4 500 ₽</p>
+							</div>
+							<div class="card__wrapper">
+								<h3 class="card__title">Криотерапия лица</h3>
+								<p class="card__description">Воздействие холодом для стимулирования кровообращения, уменьшение
+									воспалений и тонизация</p>
+								<p class="card__price">5 000 ₽</p>
+							</div>
+							<div class="card__wrapper">
+								<h3 class="card__title">Фракционный лазер</h3>
+								<p class="card__description">Лазерное воздействие для уменьшения морщин, пигментации и
+									восстановления кожи</p>
+								<p class="card__price">15 000 ₽</p>
+							</div>
+							<div class="card__wrapper">
+								<h3 class="card__title">Микродермабразия</h3>
+								<p class="card__description">Механическое удаление верхнего слоя кожи для устранения дефектов и
+									улучшения текстуры</p>
+								<p class="card__price">6 000 ₽</p>
+							</div>
+						</div>
+						<div class="card__container">
+							<h2 class="card__subtitle">Косметологические курсы и обучение во Владикавказе</h2>
+							<div class="card__wrapper">
+								<h3 class="card__title">Базовый курс косметологии</h3>
+								<p class="card__description">Основы ухода за кожей, изучение методов пилинга, работа с
+									популярными инъекциями</p>
+								<p class="card__price">25 000 ₽</p>
+							</div>
+							<div class="card__wrapper">
+								<h3 class="card__title">Курс мезотерапии</h3>
+								<p class="card__description">Обучение техникам инъекционной терапии для омоложения и коррекции
+									кожи</p>
+								<p class="card__price">30 000 ₽</p>
+							</div>
+							<div class="card__wrapper">
+								<h3 class="card__title">Мастер-класс по контурной пластике</h3>
+								<p class="card__description">Практический курс по моделированию контуров лица с использованием
+									филлеров</p>
+								<p class="card__price">20 000 ₽</p>
+							</div>
+							<div class="card__wrapper">
+								<h3 class="card__title">Курс аппаратной косметологии</h3>
+								<p class="card__description">Изучение работы с аппаратами для омоложения, чистки и лифтинга кожи
+								</p>
+								<p class="card__price">35 000 ₽</p>
+							</div>
+							<div class="card__wrapper">
+								<h3 class="card__title">Обучение работе с ботоксом</h3>
+								<p class="card__description">Техники введения ботулотоксина для разглаживания мимических морщин
+								</p>
+								<p class="card__price">28 000 ₽</p>
+							</div>
+							<div class="card__wrapper">
+								<h3 class="card__title">Повышение квалификации для косметологов</h3>
+								<p class="card__description">Специальные курсы для действующих косметологов с изучением новых
+									технологий и методик</p>
+								<p class="card__price">40 000 ₽</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="btn-up">
+			<img src="img/icons/arrow-top.svg" alt="Вернуться наверх">
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="footer__container container">
+			<div class="footer__wrapper wrapper">
+				<div class="footer__map map">
+					<iframe
+						src="https://yandex.ru/map-widget/v1/?um=constructor%3A3632a8a9fdb111dd0cee4858d0abf6ede47e19f62c1aca67e965d1f3858f8e19&amp;source=constructor"></iframe>
+				</div>
+				<div class="footer__logo">
+					<img src="img/logo.png" alt="">
+				</div>
+				<div class="footer__block">
+					<div class="footer__social">
+						<a href="#">
+							<img src="img/icons/whatsapp.svg" alt="Whatsapp">
+						</a>
+						<a href="#">
+							<img src="img/icons/instagram.svg" alt="Instagram">
+						</a>
+						<a href="#">
+							<img src="img/icons/telegram.svg" alt="Telegram">
+						</a>
+					</div>
+					<div class="footer__subtext">
+						<p>РСО-Алания, г. Владикавказ, ул. Цоколаева, 5</p>
+						<p class="footer__copyright">&#169; 2024 “DavRus LLC.”</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/script.js"></script>
+</body>
+
+</html>

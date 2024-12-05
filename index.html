@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link type="Image/x-icon" href="img/favicon.ico" rel="icon">
+	<title>Косметолог в Владикавказе - Услуги по омоложению и инъекционной косметологии</title>
+	<meta property="og:title" content="Косметолог">
+	<meta property="og:description"
+		content="Профессиональные услуги косметолога в Владикавказе. Инъекционные процедуры, омоложение кожи и многое другое.">
+	<meta property="og:image" content="img/hero/hero__img.png">
+	<meta property="og:url" content="#">
+	<meta property="og:type" content="website">
+	<meta property="og:locale" content="ru_RU">
+	<meta name="twitter:title" content="Косметолог">
+	<meta name="twitter:description"
+		content="Профессиональные услуги косметолога в Владикавказе. Инъекционные процедуры, омоложение кожи и многое другое.">
+	<meta name="twitter:image" content="img/hero/hero__img.png">
+	<meta name="twitter:url" content="#">
+	<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__container container">
+			<div class="header__wrapper wrapper">
+				<div class="header__logo">
+					<a href="/index.html">
+						<img src="img/logo.png" alt="logotype">
+					</a>
+				</div>
+				<nav class="header__menu menu">
+					<ul class="header__list menu__list">
+						<li class="header__item menu__item"><a href="/services.html">Услуги</a></li>
+						<li class="header__item menu__item"><a href="/price.html">Прайс</a></li>
+						<li class="header__item menu__item"><a href="/education.html">Обучение</a></li>
+						<li class="header__item menu__item"><a href="/gallery.html">До и после</a></li>
+						<li class="header__item menu__item"><a href="/about.html">Обо мне</a></li>
+						<li class="header__item menu__item"><a href="/contacts.html">Контакты</a></li>
+					</ul>
+					<div class="burger">
+						<span></span>
+					</div>
+				</nav>
+				<button class="header__btn btn">Записаться</button>
+			</div>
+		</div>
+		<div class="popup">
+			<form action="telegram.php" method="POST" class="popup__form">
+				<img src="img/icons/close_icon.svg" alt="close" class="popup__close">
+				<div class="popup__group">
+					<label class="popup__text">Ваше Имя</label>
+					<input type="text" name="user_name" required>
+				</div>
+				<div class="popup__group">
+					<label class="popup__phone">Ваш Телефон</label>
+					<input type="tel" name="user_phone" required>
+				</div>
+				<div class="popup__group">
+					<label class="popup__message">Ваше сообщение</label>
+					<textarea name="user_message"></textarea>
+				</div>
+				<div class="popup__group">
+					<p class="popup__check">Согласен с обработкой <a href="#">персональных данных</a></p>
+					<input required type="checkbox" name="user_confirmation" class="popup__checkbox">
+				</div>
+				<button class="popup__btn" name="user_submit">Отправить</button>
+			</form>
+		</div>
+	</header>
+	<main class="main">
+		<section class="hero">
+			<div class="hero__container container">
+				<div class="hero__wrapper wrapper">
+					<div class="hero__block">
+						<h1 class="hero__title">Врач-Косметолог</h1>
+						<ul class="hero__list">
+							<li class="hero__item">Профессионализм и опыт</li>
+							<li class="hero__item">Индивидуальный подход</li>
+							<li class="hero__item">Современные процедуры</li>
+							<li class="hero__item">Широкий спектр услуг</li>
+							<li class="hero__item">Все для здоровья и сияния вашей кожи</li>
+						</ul>
+						<button class="hero__btn btn">Записаться на консультацию</button>
+					</div>
+					<div class="hero__img">
+						<img src="img/hero/hero__img.png" alt="Косметолог">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="about">
+			<div class="about__container container">
+				<div class="about__wrapper wrapper">
+					<h2 class="about__title">Профессиональный косметолог с 5-летним опытом</h2>
+					<div class="about__description">
+						<p>Эффективная диагностика и лечение кожи, современные инъекционные методики, лазерные процедуры и
+							пилинги для здоровья и сияния вашей кожи</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="services">
+			<div class="services__container container">
+				<div class="services__wrapper wrapper">
+					<h2 class="services__title">Услуги</h2>
+					<div class="services__list">
+						<figure class="services__item">
+							<img src="img/services/injection.webp"
+								alt="Инъекционная косметология — ботокс и филлеры для омоложения лица">
+							<figcaption>Инъекционная косметология</figcaption>
+						</figure>
+						<figure class="services__item">
+							<img src="img/services/pilling.webp" alt="Пилинги для улучшения качества кожи и омоложения">
+							<figcaption>Пилинги и лечение акне</figcaption>
+						</figure>
+						<figure class="services__item">
+							<img src="img/services/brows.webp" alt="Коррекция бровей и ресниц для выразительного взгляда">
+							<figcaption>Брови и ресницы</figcaption>
+						</figure>
+						<figure class="services__item">
+							<img src="img/services/lessons.webp"
+								alt="Обучение косметологии, инъекционным методикам и коррекции бровей">
+							<figcaption>Обучение</figcaption>
+						</figure>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="btn-up">
+			<img src="img/icons/arrow-top.svg" alt="Вернуться наверх">
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="footer__container container">
+			<div class="footer__wrapper wrapper">
+				<div class="footer__map map">
+					<iframe
+						src="https://yandex.ru/map-widget/v1/?um=constructor%3A3632a8a9fdb111dd0cee4858d0abf6ede47e19f62c1aca67e965d1f3858f8e19&amp;source=constructor">
+					</iframe>
+				</div>
+				<div class="footer__logo">
+					<img src="img/logo.png" alt="">
+				</div>
+				<div class="footer__block">
+					<div class="footer__social">
+						<a href="#">
+							<img src="img/icons/whatsapp.svg" alt="Whatsapp">
+						</a>
+						<a href="#">
+							<img src="img/icons/instagram.svg" alt="Instagram">
+						</a>
+						<a href="#">
+							<img src="img/icons/telegram.svg" alt="Telegram">
+						</a>
+					</div>
+					<div class="footer__subtext">
+						<p>РСО-Алания, г. Владикавказ, ул. Цоколаева, 5</p>
+						<p class="footer__copyright">&#169; 2024 “DavRus LLC.”</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/script.js"></script>
+</body>
+
+</html>

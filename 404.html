@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link type="image/x-icon" href="img/favicon.ico" rel="shortcut icon">
+	<link type="Image/x-icon" href="img/favicon.ico" rel="icon">
+	<title>Упс...</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__container container">
+			<div class="header__wrapper wrapper">
+				<div class="header__logo">
+					<a href="/index.html">
+						<img src="img/logo.png" alt="logotype">
+					</a>
+				</div>
+				<nav class="header__menu menu">
+					<ul class="header__list menu__list">
+						<li class="header__item menu__item"><a href="/services.html">Услуги</a></li>
+						<li class="header__item menu__item"><a href="/price.html">Прайс</a></li>
+						<li class="header__item menu__item"><a href="/education.html">Обучение</a></li>
+						<li class="header__item menu__item"><a href="/gallery.html">До и после</a></li>
+						<li class="header__item menu__item"><a href="/about.html">Обо мне</a></li>
+						<li class="header__item menu__item"><a href="/contacts.html">Контакты</a></li>
+					</ul>
+					<div class="burger">
+						<span></span>
+					</div>
+				</nav>
+				<button class="header__btn btn">Записаться</button>
+			</div>
+		</div>
+		<div class="popup">
+			<form action="telegram.php" method="POST" class="popup__form">
+				<img src="img/icons/close_icon.svg" alt="close" class="popup__close">
+				<div class="popup__group">
+					<label class="popup__text">Ваше Имя</label>
+					<input type="text" name="user_name" required>
+				</div>
+				<div class="popup__group">
+					<label class="popup__phone">Ваш Телефон</label>
+					<input type="tel" name="user_phone" required>
+				</div>
+				<div class="popup__group">
+					<label class="popup__message">Ваше сообщение</label>
+					<textarea name="user_message"></textarea>
+				</div>
+				<div class="popup__group">
+					<p class="popup__check">Согласен с обработкой <a href="#">персональных данных</a></p>
+					<input required type="checkbox" name="user_confirmation" class="popup__checkbox">
+				</div>
+				<button class="popup__btn" name="user_submit">Отправить</button>
+			</form>
+		</div>
+	</header>
+	<main class="main">
+		<section class="error">
+			<div class="error__wrapper wrapper">
+				<div class="error__container container">
+					<h1 class="error__title">Ой, что-то пошло не так...</h1>
+					<h2 class="error__subtitle">Страница, которую вы ищете, не найдена</h2>
+					<div class="error__animation">
+						<div class="error__item">Красота</div>
+						<div class="error__item">Уход</div>
+						<div class="error__item">Молодость</div>
+						<div class="error__item">Уверенность</div>
+					</div>
+					<div class="error__description">
+						Кажется, мы не смогли найти то, что вы искали. Но не переживайте, у нас точно есть что-то интересное!
+						Попробуйте перейти на одну из наших популярных страниц:
+						<ul class="actions">
+							<li><a href="/index.html">Вернуться на главную страницу</a></li>
+							<li><a href="/services.html">Узнать больше об услугах</a></li>
+							<li><a href="/contacts.html">Связаться с нами напрямую</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="btn-up">
+			<img src="img/icons/arrow-top.svg" alt="Вернуться наверх">
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="footer__container container">
+			<div class="footer__wrapper wrapper">
+				<div class="footer__map map">
+					<iframe
+						src="https://yandex.ru/map-widget/v1/?um=constructor%3A3632a8a9fdb111dd0cee4858d0abf6ede47e19f62c1aca67e965d1f3858f8e19&amp;source=constructor">
+					</iframe>
+				</div>
+				<div class="footer__logo">
+					<img src="img/logo.png" alt="">
+				</div>
+				<div class="footer__block">
+					<div class="footer__social">
+						<a href="#">
+							<img src="img/icons/whatsapp.svg" alt="Whatsapp">
+						</a>
+						<a href="#">
+							<img src="img/icons/instagram.svg" alt="Instagram">
+						</a>
+						<a href="#">
+							<img src="img/icons/telegram.svg" alt="Telegram">
+						</a>
+					</div>
+					<div class="footer__subtext">
+						<p>РСО-Алания, г. Владикавказ, ул. Цоколаева, 5</p>
+						<p class="footer__copyright">&#169; 2024 “DavRus LLC.”</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/script.js"></script>
+</body>
+
+</html>

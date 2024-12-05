@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<!-- Главная страница сайта -->
+	<url>
+		<loc>https://ваш_домен/</loc>
+		<lastmod>2024-11-01</lastmod>
+		<changefreq>yearly</changefreq>
+		<priority>1.0</priority>
+	</url>
+
+	<!-- Страница услуг -->
+	<url>
+		<loc>https://ваш_домен/services.html</loc>
+		<lastmod>2024-11-01</lastmod>
+		<changefreq>yearly</changefreq>
+		<priority>0.8</priority>
+	</url>
+
+	<!-- Страница прайса -->
+	<url>
+		<loc>https://ваш_домен/price.html</loc>
+		<lastmod>2024-11-01</lastmod>
+		<changefreq>yearly</changefreq>
+		<priority>0.7</priority>
+	</url>
+
+	<!-- Страница обучения -->
+	<url>
+		<loc>https://ваш_домен/education.html</loc>
+		<lastmod>2024-11-01</lastmod>
+		<changefreq>yearly</changefreq>
+		<priority>0.7</priority>
+	</url>
+
+	<!-- Галерея -->
+	<url>
+		<loc>https://ваш_домен/gallery.html</loc>
+		<lastmod>2024-11-01</lastmod>
+		<changefreq>yearly</changefreq>
+		<priority>0.6</priority>
+	</url>
+
+	<!-- Страница контактов -->
+	<url>
+		<loc>https://ваш_домен/contacts.html</loc>
+		<lastmod>2024-11-01</lastmod>
+		<changefreq>yearly</changefreq>
+		<priority>0.6</priority>
+	</url>
+
+	<!-- Страница обо мне -->
+	<url>
+		<loc>https://ваш_домен/about.html</loc>
+		<lastmod>2024-11-01</lastmod>
+		<changefreq>yearly</changefreq>
+		<priority>0.6</priority>
+	</url>
+</urlset>

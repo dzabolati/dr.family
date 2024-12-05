@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link type="Image/x-icon" href="img/favicon.ico" rel="icon">
+	<title>Услуги косметолога | Инъекционная косметология, пилинги, брови и ресницы</title>
+	<meta property="og:title" content="Услуги косметолога | Инъекционная косметология, пилинги, брови и ресницы">
+	<meta property="og:description"
+		content="Услуги косметолога в Владикавказе: инъекционная косметология, пилинги и коррекция бровей и ресниц. Профессиональные процедуры для вашей красоты.">
+	<meta property="og:image" content="img/services/injection.webp">
+	<meta property="og:url" content="#">
+	<meta property="og:type" content="website">
+	<meta property="og:locale" content="ru_RU">
+	<meta name="twitter:title" content="Услуги косметолога | Инъекционная косметология, пилинги, брови и ресницы">
+	<meta name="twitter:description"
+		content="Услуги косметолога в Владикавказе: инъекционная косметология, пилинги и коррекция бровей и ресниц. Профессиональные процедуры для вашей красоты.">
+	<meta name="twitter:image" content="img/services/injection.webp">
+	<meta name="twitter:url" content="#">
+	<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__container container">
+			<div class="header__wrapper wrapper">
+				<div class="header__logo">
+					<a href="/index.html">
+						<img src="img/logo.png" alt="logotype">
+					</a>
+				</div>
+				<nav class="header__menu menu">
+					<ul class="header__list menu__list">
+						<li class="header__item menu__item"><a href="/services.html">Услуги</a></li>
+						<li class="header__item menu__item"><a href="/price.html">Прайс</a></li>
+						<li class="header__item menu__item"><a href="/education.html">Обучение</a></li>
+						<li class="header__item menu__item"><a href="/gallery.html">До и после</a></li>
+						<li class="header__item menu__item"><a href="/about.html">Обо мне</a></li>
+						<li class="header__item menu__item"><a href="/contacts.html">Контакты</a></li>
+					</ul>
+					<div class="burger">
+						<span></span>
+					</div>
+				</nav>
+				<button class="header__btn btn">Записаться</button>
+			</div>
+		</div>
+		<div class="popup">
+			<form action="telegram.php" method="POST" class="popup__form">
+				<img src="img/icons/close_icon.svg" alt="close" class="popup__close">
+				<div class="popup__group">
+					<label class="popup__text">Ваше Имя</label>
+					<input type="text" name="user_name" required>
+				</div>
+				<div class="popup__group">
+					<label class="popup__phone">Ваш Телефон</label>
+					<input type="tel" name="user_phone" required>
+				</div>
+				<div class="popup__group">
+					<label class="popup__message">Ваше сообщение</label>
+					<textarea name="user_message"></textarea>
+				</div>
+				<div class="popup__group">
+					<p class="popup__check">Согласен с обработкой <a href="#">персональных данных</a></p>
+					<input required type="checkbox" name="user_confirmation" class="popup__checkbox">
+				</div>
+				<button class="popup__btn" name="user_submit">Отправить</button>
+			</form>
+		</div>
+	</header>
+	<main class="main services-page">
+		<section class="injection">
+			<div class="services-page__container container">
+				<div class="services-page__wrapper wrapper">
+					<h1 class="services-page__title">Услуги</h1>
+					<h2 class="services-page__subtitle">Инъекционная косметология</h2>
+					<p class="services-page__content">Инъекционная косметология — это безопасный и современный способ
+						омоложения без операций. Ботокс, филлеры и мезотерапия эффективно разглаживают морщины,
+						восстанавливают контуры лица и возвращают коже свежесть. Длительный результат заметен уже после первых
+						процедур.
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="pilling">
+			<div class="services-page__container container">
+				<div class="services-page__wrapper wrapper">
+					<h2 class="services-page__subtitle">Пилинги</h2>
+					<p class="services-page__content">
+						Пилинги — эффективный способ обновить кожу, улучшить ее тон, эластичность и качество. Процедуры
+						помогают отбелить, разгладить и освежить лицо. Мы предлагаем разные виды пилингов: поверхностные и
+						срединные химические пилинги, пилинги с молочной кислотой и на основе фруктовых кислот — для решения
+						любых задач вашей кожи
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="brows">
+			<div class="services-page__container container">
+				<div class="services-page__wrapper wrapper">
+					<h2 class="services-page__subtitle">Брови и ресницы</h2>
+					<p class="services-page__content">
+						Брови и ресницы — ключ к выразительному взгляду и гармонии лица. Правильный уход подчеркивает
+						природную красоту, делает взгляд глубоким, а черты лица — более утонченными. Мы поможем создать
+						идеальную форму бровей и подчеркнуть густоту ресниц, чтобы Вы всегда выглядели безупречно
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="education">
+			<div class="services-page__container container">
+				<div class="services-page__wrapper wrapper">
+					<h2 class="services-page__subtitle">Обучение</h2>
+					<p class="services-page__content">
+						Повышайте навыки и достигайте результатов с индивидуальным подходом! Курсы адаптированы под Ваш
+						уровень и цели, обеспечивая быстрый прогресс. Практические советы и поддержка на каждом этапе помогут
+						обрести уверенность и стать профессионалом в своем деле
+					</p>
+				</div>
+			</div>
+		</section>
+		<div class="btn-up">
+			<img src="img/icons/arrow-top.svg" alt="Вернуться наверх">
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="footer__container container">
+			<div class="footer__wrapper wrapper">
+				<div class="footer__map map">
+					<iframe
+						src="https://yandex.ru/map-widget/v1/?um=constructor%3A3632a8a9fdb111dd0cee4858d0abf6ede47e19f62c1aca67e965d1f3858f8e19&amp;source=constructor"></iframe>
+				</div>
+				<div class="footer__logo">
+					<img src="img/logo.png" alt="Логотип">
+				</div>
+				<div class="footer__block">
+					<div class="footer__social">
+						<a href="#">
+							<img src="img/icons/whatsapp.svg" alt="Whatsapp">
+						</a>
+						<a href="#">
+							<img src="img/icons/instagram.svg" alt="Instagram">
+						</a>
+						<a href="#">
+							<img src="img/icons/telegram.svg" alt="Telegram">
+						</a>
+					</div>
+					<div class="footer__subtext">
+						<p>РСО-Алания, г. Владикавказ, ул. Цоколаева, 5</p>
+						<p class="footer__copyright">&#169; 2024 “DavRus LLC.”</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
