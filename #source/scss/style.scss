@@ -159,10 +159,7 @@ main {
 		}
 	}
 }
-.active-desktop-link {
-	//border-bottom: 2px solid #ffffff;
-	//color: red;
-}
+
 .btn {
 	background: #fff;
 	height: 56px;
@@ -187,20 +184,20 @@ main {
 	width: 100%;
 	height: 100vh;
 	background: rgba(0, 0, 0, 0.5);
-	opacity: 0; // Скрываем фон и сам попап
-	pointer-events: none; // Запрещаем ему быть целью событий
+	opacity: 0;
+	pointer-events: none;
 	transition: 0.5s all;
 	&-active {
 		display: block;
-		opacity: 1; // Показываем фон и попап
-		pointer-events: all; // Возвращаем события
+		opacity: 1;
+		pointer-events: all;
 		transition: 0.5s all;
 	}
 	&__form {
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		transform: translate(-50%, -50%) scale(0); // Центрируем и масштабируем в 0 само окно
+		transform: translate(-50%, -50%) scale(0);
 		background: linear-gradient(to bottom, #333, #333 50%, #222222 75%, #eee 200%);
 		width: 400px;
 		padding: 25px;
@@ -209,7 +206,7 @@ main {
 			width: 300px;
 		}
 		&-active {
-			transform: translate(-50%, -50%) scale(1); // Так же центрируем и плавно увеличиваем
+			transform: translate(-50%, -50%) scale(1);
 			transition: 0.5s all;
 		}
 	}
@@ -542,7 +539,6 @@ main {
 		font-family: "Inter";
 		font-weight: 700;
 		color: #fff;
-		//width: 55%;
 		text-align: center;
 		text-wrap: balance;
 		line-height: 150%;
@@ -667,11 +663,9 @@ main {
 		flex-direction: column;
 		text-align: right;
 		justify-content: flex-end;
-		//width: 33.333%;
 		@media (max-width: 654px) {
 			padding: 20px 0 0 0;
 			text-align: center;
-			//width: 100%;
 		}
 	}
 	&__social {
@@ -701,7 +695,6 @@ main {
 	}
 }
 
-//services//
 .services-page {
 	display: flex;
 	flex-direction: column;
@@ -736,9 +729,7 @@ main {
 		line-height: 130%;
 	}
 }
-//services//
 
-//price//
 .price-page {
 	font-family: "inter";
 	&__wrapper {
@@ -852,9 +843,6 @@ main {
 			font-size: 22px;
 		}
 	}
-	// @media (max-width: 559px) {
-	// 	display: grid;
-	// }
 	&__wrapper {
 		padding: 20px;
 		background: #525252;
@@ -881,8 +869,6 @@ main {
 		color: #fff;
 	}
 }
-
-//price//
 
 .education-page {
 	font-family: "inter";
@@ -935,7 +921,6 @@ main {
 		color: #fff;
 		font-size: 18px;
 		padding: 20px 0 0 20px;
-		//text-wrap: balance;
 	}
 
 	&__item {
@@ -1103,7 +1088,6 @@ main {
 	}
 }
 
-/* Оверлей для затемнения фона */
 .overlay {
 	position: fixed;
 	top: 0;
@@ -1113,103 +1097,54 @@ main {
 	background: rgba(0, 0, 0, 0.8);
 	z-index: 1000;
 	display: flex;
-	align-items: center; // Центрирование по вертикали
-	justify-content: center; // Центрирование по горизонтали
+	align-items: center;
+	justify-content: center;
 	opacity: 0;
 	transition: opacity 0.5s ease-in-out;
 
 	&.active {
-		opacity: 1; // Оверлей становится видимым
+		opacity: 1;
 	}
 }
 
-/* Контейнер для большого изображения */
 .big-image {
 	position: relative;
-	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); // Тень для глубины
-	overflow: hidden; // Предотвращение выхода изображения за границы
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
 	transition: transform 0.3s ease-in-out;
 
 	img {
 		display: block;
-		object-fit: contain; // Сохраняет пропорции изображения
+		object-fit: contain;
 		width: 100%;
 		height: 100%;
 	}
 
-	/* Кнопка закрытия */
 	.close {
 		position: absolute;
 		top: 5px;
 		right: 5px;
 		width: 30px;
 		height: 30px;
-		background-color: rgba(255, 255, 255, 0.8); // Полупрозрачный белый фон для кнопки
-		border-radius: 50%; // Круглая форма
+		background-color: rgba(255, 255, 255, 0.8);
+		border-radius: 50%;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		font-size: 20px; // Размер крестика
+		font-size: 20px;
 		font-weight: bold;
-		color: black; // Цвет крестика
+		color: black;
 		cursor: pointer;
-		z-index: 1001; // Поверх всего остального
+		z-index: 1001;
 		box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 		opacity: 1;
 		transition: background-color 0.3s ease-in-out;
 
 		&:hover {
-			background-color: rgba(255, 255, 255, 1); // Меняем цвет на полностью белый при наведении
+			background-color: rgba(255, 255, 255, 1);
 		}
 	}
 }
-
-//magnify
-// .show {
-// 	.gallery__title {
-// 		opacity: 0.25;
-// 	}
-// 	img {
-// 		opacity: 0.25;
-// 		pointer-events: none;
-// 	}
-// }
-// .active {
-// 	transition:
-// 		box-shadow 0.5s linear 0.5s,
-// 		top 1s ease-out,
-// 		left 1s ease-out,
-// 		transform 1s ease-out,
-// 		width 1s ease-in,
-// 		height 1s ease-in;
-// 	box-shadow: 0 0 0 10px #fff;
-// 	filter: drop-shadow(1px 2px 6px #000);
-// 	pointer-events: none;
-// }
-// .close {
-// 	position: relative;
-// 	left: 100%;
-// 	height: 20px;
-// 	width: 20px;
-// 	transform: translate(0%, -100%);
-// 	border-radius: 50%;
-// 	box-shadow:
-// 		0 0 0 2px #fff,
-// 		0 0 2px 2px #000;
-// 	font: bold 20px/20px Arial;
-// 	text-align: center;
-// 	background-color: #000;
-// 	color: #fff;
-// 	pointer-events: auto;
-// 	cursor: pointer;
-// 	transition: 1s linear;
-// 	opacity: 0;
-// }
-// .active .close:hover {
-// 	transform: translate(0%, -100%) rotate(0.5turn);
-// 	transition: 1s ease;
-// }
-//magnify
 
 .about-page {
 	font-family: "inter";
@@ -1231,7 +1166,6 @@ main {
 
 	&__img {
 		padding: 20px 0;
-		//text-align: center;
 		&-wrapper {
 			width: 300px;
 			height: 300px;
@@ -1248,14 +1182,6 @@ main {
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
-			//max-width: 595px;
-			//max-height: 300px;
-			//border-radius: 50%;
-			//max-width: 100%;
-			//max-height: 100%;
-			//	border-radius: 50%;
-			//overflow: hidden;
-			//border: 5px solid #fff;
 		}
 	}
 
@@ -1297,21 +1223,11 @@ main {
 		justify-content: space-around;
 		align-items: center;
 		padding: 30px 0;
-		//max-height: 40vw;
 		@media (max-width: 703px) {
 			flex-direction: column;
-			//max-height: 100%;
-			//align-items: center;
 			padding: 20px 0;
 		}
 		img {
-			//max-width: 48%;
-			// @media (max-width: 581px) {
-			// 	max-width: 66.666%;
-			// 	&:not(:first-child) {
-			// 		padding: 20px 0 0 0;
-			// 	}
-			// }
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
@@ -1470,7 +1386,7 @@ html {
 
 	&__animation {
 		position: relative;
-		height: 60px; /* Фиксированная высота контейнера */
+		height: 60px;
 		overflow: hidden;
 		font-size: 2rem;
 		font-weight: bold;

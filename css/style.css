@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*null*/
 * {
 	padding: 0;
@@ -1224,7 +1223,6 @@ main {
 	cursor: pointer;
 }
 
-/* Оверлей для затемнения фона */
 .overlay {
 	position: fixed;
 	top: 0;
@@ -1243,13 +1241,11 @@ main {
 	opacity: 1;
 }
 
-/* Контейнер для большого изображения */
 .big-image {
 	position: relative;
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 	overflow: hidden;
 	transition: transform 0.3s ease-in-out;
-	/* Кнопка закрытия */
 }
 .big-image img {
 	display: block;
@@ -1528,7 +1524,7 @@ html {
 }
 .error__animation {
 	position: relative;
-	height: 60px; /* Фиксированная высота контейнера */
+	height: 60px;
 	overflow: hidden;
 	font-size: 2rem;
 	font-weight: bold;
